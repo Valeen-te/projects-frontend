@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-contenedor">
+            <div class="logo">
+                <a href="">
+                    <img src="img/logo.png" alt="" id="logo-header">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <ul class="nav-icons">
+                    <li class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </li>
+                    <li class="icon" id="icon-favorito">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </li>
+                    <li class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </li>
+                    <li class="icon" id="icon-menu">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </label>
+                        <nav class="nav-desplegable">
+                            <ul>
+                                <li><a href="">Inicio</a></li>
+                                <li><a href="">Productos</a></li>
+                                <li><a href="">Servicios</a></li>
+                                <li><a href="">Contactos</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contenedor-main">
+            <div class="cajas" id="main-header">
+                <div class="box-1">
+                    <div class="box-1-contenedor">
+                        <div class="box-1-fondo">
+                            <h2>Consigue los mejores Productos <br> para tu hogar</h2>
+                        <div class="buscador">
+                            <label for="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </label><input type="search" id="search" placeholder="Busca tus productos favoritos">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <a href="">
+                        <img src="img/img1.png" alt="">
+                    </a>
+                </div>
+                <div class="box-3">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/twitter.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="cajas" id="main-contenido">
+                <div class="nav-main">
+                    <ul>
+                        <li><a href="">Electronicos</a></li>
+                        <li><a href="">Cosmeticos</a></li>
+                        <li><a href="">Relojs</a></li>
+                        <li><a href="">Libros</a></li>
+                        <li><a href="">Muebles</a></li>
+                        <li><a href="" id="nav-main-mas">Más</a></li>
+                    </ul>
+                </div>
+                <div class="contenedor-tarjetas">
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post1.png" alt="">
+                                <span>
+                                    <p class="producto">Playstation 5</p>
+                                    <p class="precio"><b>$600</b></p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post2.png" alt="">
+                                <p class="producto">Reloj clásico Swiss</p>
+                                <p class="precio"><b>$199</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post3.png" alt="">
+                                <p class="producto">Mesa de noche</p>
+                                <p class="precio"><b>$172</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post4.png" alt="">
+                                <p class="producto">El Libro Negro de las Horas</p>
+                                <p class="precio"><b>$1</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post5.png" alt="">
+                                <p class="producto">Chaqueta de piel - Wolverine</p>
+                                <p class="precio"><b>$83</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tarjetas">
+                        <a href="">
+                            <div class="texto-tarjetas">
+                                <img src="img/post6.png" alt="">
+                                <p class="producto">Bolso para laptop</p>
+                                <p class="precio"><b>$20</b></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cajas" id="main-banner">
+                <div class="contenedor-banner">
+                    <div class="contenido-banner">
+                        <h2>Ultima moda en zapatos</h2>
+                        <p>Colección de zapatos 2022</p>
+                        <a href="">VER MÁS</a>
+                    </div>
+                    <img src="img/zapato.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contendedor-footer">
+            <div class="redes">
+                <a href="#logo-header">
+                    <img src="img/logo-b.png" id="logo-footer"><br>
+                </a>
+                <a href=""><img src="img/facebook-b.png" alt=""></a>
+                <a href=""><img src="img/twitter-b.png" alt=""></a>
+                <a href=""><img src="img/instagram-b.png" alt=""></a>
+                <p>Diseñado por @ Valen_te</p>
+            </div>
+            <div class="contenido-footer">
+                <ul>
+                    <h3>TIENDAS</h3>
+                    <li><a href="">Acerca de nosotros</a></li>
+                    <li><a href="">Contactos</a></li>
+                    <li><a href="">Ubicaciones</a></li>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                </ul>
+                <ul>
+                    <h3>LINKS</h3>
+                    <li><a href="">Electronicos</a></li>
+                    <li><a href="">Colección verano</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Cosmeticos</a></li>
+                    <li><a href="">Muebles</a></li>
+                </ul>
+                <ul>
+                    <h3>CONTACTOS</h3>
+                    <li><a href="">+58 0426-1234567</a></li>
+                    <li><a href="">E-Shop@gmail.con</a></li>
+                    <li><a href="">Caracas.Venezuela</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
