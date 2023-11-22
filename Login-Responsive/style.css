@@ -1,0 +1,196 @@
+@import url(reset.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #044268, #007199, #00a3c6, #12d8eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tarjeta-contenido{
+    width: 450px;
+    background: rgb(221, 221, 221,0.5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: #044268bb 0px 5px 5px;
+}
+
+.tarjeta-logo{
+    padding-bottom: 1rem;
+}
+
+.tarjeta-logo img{
+    width: 100px;
+    box-shadow: #04426872 0px 3px 5px;
+    border-radius: 50px;
+}
+
+.tarjeta-logo,
+.tarjeta-header,
+.tarjeta-footer {
+    text-align: center;
+}
+
+.tarjeta-contenido a{
+    text-decoration: none;
+    color: rgb(0, 113, 24);
+    transition: all 0.5s ease;
+}
+
+.tarjeta-contenido a:hover{
+    text-decoration: underline;
+    color: rgb(5, 84, 73);
+}
+
+.tarjeta-header{
+    margin-bottom: 2rem;
+}
+.tarjeta-header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.tarjeta-header p{
+    opacity: .8;
+    font-size: calc(1rem * .8);
+}
+
+.tarjeta-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tarjeta-form .item-form {
+    position: relative;
+}
+
+.tarjeta-form .item-form i{
+    position: absolute;
+    color: rgb(39, 39, 39);
+    top: 0.82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.tarjeta-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.tarjeta-form .item-form-otro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.tarjeta-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.tarjeta-form input[type="email"],
+.tarjeta-form input[type="password"]{
+    border: none;
+    outline: none;
+    background: rgba(205, 205, 205, 0.4);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.tarjeta-form input:focus {
+    background-color: white;
+    
+}
+
+.item-form-otro .checkbox{
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(6, 108, 94);
+}
+
+.tarjeta-contenido button{
+    padding: 1rem;
+    background-color: rgb(6, 108, 94);
+    border-radius: 100px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.tarjeta-contenido button:hover{
+    transition: all 0.3s ease;
+    background-color: rgb(5, 84, 73);
+}
+
+.tarjeta-redes-sociales{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.tarjeta-redes-sociales > div{
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+.tarjeta-redes-sociales-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.tarjeta-redes-sociales-btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.tarjeta-redes-sociales-btns a:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    box-shadow: #0519379f 0 3px 10px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        padding: 2rem 0;
+    }
+    .tarjeta-contenido{
+        width: 300px;
+        padding: 2rem;
+    }
+    .tarjeta-footer{
+        font-size: 20px;
+    }
+}

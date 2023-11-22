@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aeb54cd78.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+</head>
+<body>
+    <div class="tarjeta-contenedor">
+        <div class="tarjeta-contenido">
+            <div class="tarjeta-logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="tarjeta-header">
+                <h1>INICIO</h1>
+                <p>Por favor Ingresar para usar la plataforma</p>
+            </div>
+            <form class="tarjeta-form">
+                <div class="item-form">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Correo electronico" required autofocus>
+                </div>
+                <div class="item-form">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="item-form-otro">
+                    <div class="checkbox">
+                        <input type="checkbox" id="recuerdameCheckbox">
+                        <label for="recuerdameCheckbox">Recuerdarme</label>
+                    </div>
+                    <a href="#">¡Olvide mi contraseña!</a>
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+            <div class="tarjeta-footer">
+                ¿No tienes una cuenta? <a href="#">Crea una cuenta gratis</a>
+            </div>
+        </div>
+        <div class="tarjeta-redes-sociales">
+            <div>Ingresa con una cuenta</div>
+            <div class="tarjeta-redes-sociales-btns">
+                <a href="#">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
