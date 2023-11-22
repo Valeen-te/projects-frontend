@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aeb54cd78.js" crossorigin="anonymous"></script>
+</head>   
+<body>
+    <!-- precarga -->
+    <div class="precarga">
+        <img src="multimedia/img-cargando.gif" alt="cargando">
+    </div>
+    <!-- header -->
+    <header>
+        <video class="contenedor-video" muted autoplay loop>
+            <source src="multimedia/video.mp4" >
+        </video>
+        <h1>Proyecto de Video</h1>
+        <!-- video switch -->
+        <button class="switch-btn">
+            <span>
+                play
+            </span>
+            <span>
+                pause
+            </span>
+            <span class="switch"></span>
+        </button>
+    </header>
+
+<!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
