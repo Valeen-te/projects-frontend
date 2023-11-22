@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #252850;
+}
+
+a {
+    text-decoration: none;
+    color: #252850;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+    background-image: linear-gradient(#252850,#00a8d671), url('media/img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+/* navbar */
+
+nav {
+    background: transparent;
+    padding: 1rem 1.5rem;
+    width: 100vw;
+}
+
+.nav-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn-nav {
+    height: 30px;
+    width: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.btn-nav:hover {
+    rotate: 90deg;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.links a {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    display: block;
+}
+
+/* ----- fixed navbar ----- */
+
+.nav-fixed {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav-fixed .links a  {
+    color: #252850;
+}
+/* ----- responsive navbar ----- */
+
+@media screen and (max-width:800px){
+    nav {
+        background-color: white;
+    }
+    .nav-principal {
+        display: block;
+    }
+    .links-contenedor{
+        overflow: hidden;
+        height: 0;
+        z-index: 999px;
+    }
+    .links{
+        display: block;
+    }
+    .links a {
+        color: #252850;
+        display: block;
+        padding-top: 15px;
+    }
+    .btn-nav{
+        visibility: visible;
+    }
+}
+
+/* banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-banner {
+    width: 500px;
+    text-align: center;
+}
+
+.contenedor-banner h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.contenedor-banner p {
+    color: white;
+}
+
+.contenedor-banner a {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 3px 5px;
+    border: solid 2px white;
+    transition: all 0.3s ease;
+}
+
+.contenedor-banner a:hover {
+    color: #252850;
+    background: white;
+}
+
+/* secciones */
+
+.seccion {
+    height: 80vh;
+}
+
+.titulo h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.titulo span {
+    color: #00a6d6;
+}
+
+#nosotros,
+#tours {
+    background-color: #d2e8ff;
+}
+
+/* footer */
+
+footer {
+    background: #252850;
+    padding: 5rem 1rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+#fecha {
+    color: white;
+}
+
+/* btn regresar inicio */
+
+.link-volver {
+    font-size: 24px;
+    color: white;
+    background-color: #3b83bd;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.link-volver i{
+    color: white;
+}
+
+.visible {
+    visibility: visible;
+    z-index: 100;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aeb54cd78.js" crossorigin="anonymous"></script>
+</head>   
+<body>
+    <!-- header -->
+    <header id="inicio">
+        <nav>
+            <!-- navbar -->
+            <div class="nav-principal">
+                <div class="header-nav">
+                    <img src="media/logo.png" alt="logo" class="logo">
+                    <button class="btn-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="links-contenedor">
+                    <!-- links -->
+                    <ul class="links">
+                        <li>
+                            <a href="#inicio" class="scroll-links">inicio</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros" class="scroll-links">nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#servicios" class="scroll-links">servicios</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-links">tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="contenedor-banner">
+                <h1>proyecto scroll</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repellendus velit nulla repudiandae consectetur.</p>
+                <a href="#tours" class="scroll-links">Explorar tours</a>
+            </div>
+        </div>
+    </header>
+    <!-- nosotros -->
+    <section id="nosotros" class="seccion">
+        <div class="titulo">
+            <h2>Acerca de <span>nosotros</span></h2>
+        </div>
+    </section>
+    <!-- servicios -->
+    <section id="servicios" class="seccion">
+        <div class="titulo">
+            <h2>nuestros <span>servicios</span></h2>
+        </div>
+    </section>
+    <!-- contactos -->
+    <section id="tours" class="seccion">
+        <div class="titulo">
+            <h2>principales <span>tours</span></h2>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+        <p>
+            derechos de autor © agencia de viajes escápate
+            <span id="fecha"></span>. todos los derechos reservados 
+        </p>
+    </footer>
+    <!-- back to top button -->
+    <a href="#inicio" class="link-volver">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+<!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
