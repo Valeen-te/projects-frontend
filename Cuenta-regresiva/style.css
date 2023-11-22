@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* colores pre definidos */
+
+:root {
+/* colores principales */
+--amarillo--: #FFFF00;
+--azul--: #3b83bd;
+--rojo--: #FF0000;
+--verde--: #008f39;
+--naranja--: #ff8000;
+--violeta--: #8c004b;
+/* frecuentes */
+--azul-oscuro--: #252850;
+--azul-claro--: #add8e6;
+--verde-oscuro--: #2d572c;
+--gris--: #9b9b9b;
+--gris-oscuro--: #4B4B4B;
+--negro--: #181717;
+--blanco--: #ffffff;
+--transiciones--: all 0.3s ease;
+--espaciado--: 3px;
+--redondeo--: 10px;
+--sombra-suave--: 0 5px 15px rgba(0, 0, 0, 0.1);
+--sombra-oscura--: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+/* body */
+
+body {
+    height: 100vh;
+}
+
+/* seccion principal */
+
+.seccion-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 95vw;
+    margin: 5rem auto;
+    max-width: var(--max-width);
+}
+
+.img-sorteo img {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width:990px) {
+    .seccion-principal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* sorteo info */
+
+.sorteo-info h3{
+    text-transform: uppercase;
+    color: var(--azul--);
+    font-size: 1.75rem;
+    letter-spacing: var(--espaciado--);
+    margin-bottom: 0.75rem;
+}
+
+.sorteo-info > h4{
+    font-size: 1rem;
+    letter-spacing: var(--espaciado--);
+    text-transform: capitalize;
+    color: var(--azul-oscuro--);
+}
+
+.sorteo-info p {
+    margin: 2rem 0;
+    color: #9cafb6;
+}
+
+/* fecha limite */
+
+.fecha-limite{
+    display: flex;
+}
+
+.fecha-limite-formato {
+    background-color: #0c2250;
+    color: var(--blanco--);
+    width: 90px;
+    height: 110px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.fecha-limite-formato h4 {
+    font-size: 2rem;
+}
+
+.expirado {
+    font-size: 1.3rem;
+    color: #0c2250;
+}
+
+@media screen and (max-width:420px) {
+    .fecha-limite-formato{
+        height: 90px;
+        width: 70px;
+    }
+    .fecha-limite-formato h4{
+        font-size: 1.5rem;
+    }
+    .fecha-limite-formato span{
+        font-size: .8rem;
+    }
+}
