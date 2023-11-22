@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #cda434;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.titulo h2 {
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.pregunta{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.11);
+    margin: 0 auto 50px auto;
+    max-width: 600px;
+}
+
+.titulo-pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.titulo-pregunta p {
+    color: rgb(5, 20, 53);
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.btn-pregunta {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.btn-pregunta:hover {
+    rotate: 90deg;
+}
+
+.icono-menos {
+    display: none;
+}
+
+.texto-active .icono-menos{
+    display: block;
+}
+
+.texto-active .icono-mas{
+    display: none;
+}
+
+.texto-pregunta {
+    border-top: solid 0.5px rgb(38, 88, 146);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: none;
+}
+
+.texto-active .texto-pregunta{
+    display: block;
+}
+
+.texto-pregunta p {
+    color: rgb(38, 88, 146);
+}
+@media screen and (max-width: 670px) {
+    .pregunta {
+        margin: 0 30px 50px 30px;
+    }
+    .titulo-pregunta p {
+        letter-spacing: 1px;
+    }
+}
