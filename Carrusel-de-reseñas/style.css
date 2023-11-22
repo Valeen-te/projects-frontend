@@ -1,0 +1,133 @@
+
+/* generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(7, 15, 51);
+    box-sizing: border-box;
+}
+
+/* subrayado */
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background-color: rgb(44, 195, 255);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* body */
+
+body{
+    background-color: aliceblue;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* titulos */
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+h4{
+    font-size: 1.7rem;
+}
+
+/* parrafos */
+
+p{
+    font-size: 1.2rem;
+}
+
+/* modificaciones */
+
+.contenedor {
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    margin: 40px;
+}
+
+img {
+    max-height: 300px;
+}
+
+.comentario {
+    margin-top: 4rem;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.253);
+}
+
+#autor{
+    text-transform: capitalize;
+}
+
+#trabajo {
+    color: rgb(0, 140, 255);
+    text-transform: uppercase;
+}
+
+#info {
+    margin-top: 15px;
+    color: rgb(21, 61, 136);
+}
+.contenedor-botones{
+    margin: 10px 0 10px 0;
+}
+.btn-antes, 
+.btn-despues{
+    font-size: 28px;
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+}
+i {
+    color: rgb(0, 140, 255);
+}
+i:hover {
+    color: rgb(21, 61, 136);
+    transition: all 0.3s ease;
+}
+
+button{
+    padding: 8px;
+    color: rgb(44, 195, 255);
+    background-color: rgb(224, 246, 255);
+    border: solid 0.5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(21, 61, 136);
+    color: aliceblue;
+    transition: all 0.1s ease;
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        width: 200px;
+    }
+}
