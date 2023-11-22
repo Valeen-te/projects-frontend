@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aeb54cd78.js" crossorigin="anonymous"></script>
+</head>   
+<body>
+    <section class="seccion">
+        <div class="titulo">
+            <h2>nosotros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed minus repellendus</p>
+        </div>
+        <div class="nosotros-centro seccion-central">
+            <article class="nosotros-img">
+                <img src="img.jpg" alt="nosotros foto">
+            </article>
+            <article class="nosotros">
+                <!-- btn contenedor -->
+                <div class="btn-contenedor">
+                    <button class="tab-btn activo" data-id="historia">historia</button>
+                    <button class="tab-btn" data-id="vision">visión</button>
+                    <button class="tab-btn" data-id="metas">metas</button>
+                </div>
+                <article class="nosotros-contenido">
+                    <!-- elemento simple -->
+                    <div class="contenido activo" id="historia">
+                        <h4>historia</h4>
+                        <!-- historia -->
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro laboriosam laborum voluptatibus beatae. Eveniet molestiae illo voluptate culpa incidunt quia tempora, odio fuga repudiandae fugit tenetur quaerat soluta tempore.
+                        </p>
+                    </div>
+                    <!-- fin de elemento simple -->
+                    <!-- elemento simple -->
+                    <div class="contenido" id="vision">
+                        <h4>visión</h4>
+                        <!-- vision -->
+                        <p>
+                            Maecenas gravida lorem orci, scelerisque pulvinar dui tincidunt nec. Donec a luctus nulla, at porttitor tortor. Nulla posuere eget neque et ultricies. Fusce at purus sit amet tortor iaculis dictum. Morbi dignissim nibh sem, id fermentum tellus tincidunt sit amet. Suspendisse quam nunc, commodo sed mauris at, molestie consectetur justo. Vivamus ut quam nisi. 
+                        </p>
+                        <ul>
+                            <li>elemento de lista</li>
+                            <li>elemento de lista</li>
+                            <li>elemento de lista</li>
+                        </ul>
+                    </div>
+                    <!-- fin de elemento simple -->
+                    <!-- elemento simple -->
+                    <div class="contenido" id="metas">
+                        <h4>metas</h4>
+                        <!-- metas -->
+                        <p>Etiam ultrices augue et rhoncus finibus. Sed sit amet diam justo. Nunc arcu dui, efficitur non neque vel, vulputate blandit elit. Quisque cursus tortor in leo porttitor, </p>
+                    </div>
+                    <!-- fin de elemento simple -->
+                </article>
+            </article>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
