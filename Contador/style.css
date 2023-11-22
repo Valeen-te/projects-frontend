@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: rgb(49, 49, 49);
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#container {
+    text-align: center;
+}
+
+h2{
+    color: green;
+}
+
+input {
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: solid;
+    border-color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+input:hover {
+    border-color: rgb(51, 146, 255);
+    background-color: rgba(164, 211, 253, 0.637);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 40px;
+    }
+    input {
+        font-size: 20px;
+    }
+}
