@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 200px;
+    margin-left: 5px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-nav {
+    font-size: 30px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: rgb(53, 139, 252);
+}
+.boton-nav:hover {
+    rotate: 90deg;
+}
+
+.sider {
+    width: 300px;
+    background-color: white;
+    position: absolute;top: 0;left: -300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sider-desplegar {
+    position: absolute;left: 0;
+}
+
+.links li{
+    list-style: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.links li:hover {
+    background-color: rgb(170, 199, 224);
+}
+
+.links a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(6, 48, 104);
+}
+
+.links-redes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.links-redes li {
+    list-style: none;
+}
+
+.links-redes i{
+    font-size: 30px;
+    color: rgb(53, 139, 252);
+    transition: all 0.3s ease;
+}
+
+.links-redes i:hover {
+    color: rgb(6, 48, 104);
+}
+
+.header-sider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.salir {
+    margin: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(231, 6, 6);
+}
