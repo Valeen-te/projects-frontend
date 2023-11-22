@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+/*Header*/
+
+.header-site{
+    width: 100%;
+    height: 155px;
+    background-color: white;
+}
+.contenedor-header{
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 145, 255);
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+}
+.nav > ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.btn-menu > a{
+    padding: 25px 19px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: solid 3px white;
+    display: flex;
+}
+.nav svg{
+    color: grey;
+}
+.opc1:hover, .opc2:hover,
+.opc3:hover, .opc4:hover {
+    border-bottom: solid 3px rgb(0, 0, 0);
+    transition: all 0.3s ease; 
+}
+.icon {
+    min-width: 161px;
+}
+.icon a{
+    text-decoration: none;
+    color: grey;
+    padding: 0 10px;
+}
+.icon svg{
+    text-decoration: none;
+    color: grey;
+    padding: 0 10px;
+    cursor: pointer;
+}
+/*Menu desplegable*/
+.menu-desplegable{
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    box-shadow: rgba(0, 0, 0, 0.035) 5px 0px 10px 0px;
+}
+.menu-desplegable:hover{
+    height: 600px;
+}
+.des-contenedor{
+    box-sizing: content-box;
+    overflow: hidden;
+    max-width: 1400px;
+    height: 520px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.des-contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.des-contenido ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.des-contenido a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0px;
+    border: solid 2px white;
+}
+.des-contenido a:hover{
+    transition: all .3s ease;
+    border-bottom: solid 2px black;
+}
+.cont-des-img{
+    width: 700px;
+    height: 520px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.des-img{
+    width: 325px;
+    height: 510px;
+    text-align: center;
+}
+.des-img img{
+    max-width: 100%;
+}
+.opc1:hover ~ .menu-desplegable{
+    transition: all 0.3s ease-out;
+    height: 600px;
+}
+.opc2:hover ~ .menu-desplegable{
+    transition: all 0.3s ease-out;
+    height: 600px;
+}
+.opc3:hover ~ .menu-desplegable{
+    transition: all 0.3s ease-out;
+    height: 600px;
+}
+.opc4:hover ~ .menu-desplegable{
+    transition: all 0.3s ease-out;
+    height: 600px;
+}
+
+/*desplegables icono*/
+
+.check-buscar{
+    display: none;
+}
+.buscador{
+    overflow: hidden;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    top: 0;
+}
+.check-buscar:checked ~ .buscador{
+    transition: all .5s ease;
+    display: block;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.189);
+}
+.contenedor-buscador{
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+.contenido-buscador{
+    max-width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.btn-buscar{
+    color: gray;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.buscador-input{
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    width: 100%;
+    max-width: 1000px;
+    font-size: 25px;
+    border-style: none;
+    outline: none;
+    margin: 10px;
+    
+}
+.equis-buscar{
+    cursor: pointer;
+}
+.check-bag{
+    display: none;
+}
+.bag{
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.189);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.check-bag:checked ~ .bag{
+    transition: all .5s ease;
+    height: 100%;
+}
+.contenedor-bag{
+    box-sizing: border-box;
+    max-width: 500px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    padding: 40px;
+}
+.contenido-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: solid 2px rgb(151, 151, 151);
+}
+.contenido-up h2{
+    margin: 0;
+}
+
+/*Menu responsive*/
+
+.desplegar{
+    display:none;
+}
+.btn-des svg{
+    display: none;
+    padding: 10px;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+.menu-responsive{
+    overflow: hidden;
+    background-color: rgb(21, 102, 164);
+    height: 0;
+    width: 100%;
+    left: 100%;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+}
+.desplegar:checked ~ .menu-responsive{
+    transition: all 0.3s ease;
+    left: 0%;
+    height: 500px;
+}
+.menu-responsive ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-responsive li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 890px){
+    .logo a{
+        font-size: 25px;
+    }
+    .nav{
+        display: none;
+    }
+    .buscador-input{
+        font-size: 18px;
+    }
+    .btn-des svg{
+        display: block;
+    }
+}
+
+/*Main*/
+
+main{
+    overflow: hidden;
+    max-width: 50px;
+    height: 100vh;
+    margin: 0 auto;
+}
